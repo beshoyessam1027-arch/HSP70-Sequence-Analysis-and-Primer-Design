@@ -7,9 +7,16 @@ This project focuses on the bioinformatic analysis of the **Heat Shock Protein 7
 
 ## 🔬 Bioinformatics Workflow & Methodology
 
-### 1. Sequence Retrieval & NCBI BLAST
-- **Query Sequence:** Human *Homo sapiens* heat shock protein 70 (HSP70) mRNA/Protein sequence retrieved from NCBI GenBank.
-- **BLAST Search:** Performed **BLASTn** and **BLASTp** against the non-redundant (nr) database to identify homologous sequences across different taxa and evaluate percentage identity and E-values.
+### 1. NCBI BLASTn Sequence Similarity Search
+To validate the evolutionary conservation of the human **HSPA1A** gene, a nucleotide BLAST (BLASTn) was performed against the non-redundant database. 
+
+![NCBI BLASTn Results](<img width="1128" height="612" alt="blast_results" src="https://github.com/user-attachments/assets/d97c2567-9225-497a-822d-7bf56e774997" />
+)
+
+**Key Observations:**
+- **Query Coverage:** The alignment showed a **100% Query Coverage** with top mammalian hits, ensuring that the full-length mRNA sequence was successfully aligned.
+- **Statistical Significance:** The **E-value was 0.0**, which mathematically proves that the sequence similarity found is highly significant and not by random chance.
+- **Percent Identity:** The top hit confirmed 100% identity with *Homo sapiens* heat shock protein family A member 1A (HSPA1A), validating the absolute accuracy of our query sequence.
 
 ### 2. Multiple Sequence Alignment (MSA)
 - Used **Clustal Omega** to align HSP70 sequences from diverse organisms (*Homo sapiens*, *Mus musculus*, *Arabidopsis thaliana*, and *Escherichia coli*).
