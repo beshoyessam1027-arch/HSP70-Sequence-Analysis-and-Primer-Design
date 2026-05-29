@@ -29,8 +29,14 @@ To evaluate the evolutionary conservation of the **HSPA1A** gene, a Multiple Seq
 - **5' Untranslated Region (UTR) Divergence:** The alignment clearly reveals that the sequence divergence is significantly higher at the beginning of the sequences (the 5' region), while the coding regions show almost near-perfect sequence identity.
 
 ### 3. Phylogenetic Analysis
-- Reconstructed a **Phylogenetic Tree** using **MEGA (Molecular Evolutionary Genetics Analysis)** utilizing the Neighbor-Joining method.
-- **Insight:** The tree visually demonstrates the evolutionary conservation and divergence of the HSP70 gene from prokaryotes to higher eukaryotes.
+An unrooted phylogenetic tree was reconstructed based on the Clustal Omega alignment scores to visualize the evolutionary relationships among the selected mammalian HSPA1A sequences.
+
+![Phylogenetic Tree](![phylogenetic_tree](https://github.com/user-attachments/assets/105536f1-e1ed-431d-891b-631d5bb62f4c)
+)
+
+**Key Insights from the Tree:**
+- **Clonality & Common Ancestry:** As displayed in image.svg, the tree radiates from a tight central node, illustrating that the HSPA1A gene in *Homo sapiens*, *Mus musculus*, and *Sus scrofa* shares a highly recent common mammalian ancestor.
+- **Sequence Homology:** The relatively equal branch lengths suggest a steady and conserved rate of evolutionary divergence, further validating the critical cellular role of the HSP70 chaperone which resists high mutation rates.
 
 ### 4. PCR Primer Design
 Designed locus-specific primers optimized for standard PCR amplification using **NCBI Primer-BLAST**.
