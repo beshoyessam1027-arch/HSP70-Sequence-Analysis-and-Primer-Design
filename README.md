@@ -38,14 +38,21 @@ An unrooted phylogenetic tree was reconstructed based on the Clustal Omega align
 - **Clonality & Common Ancestry:** As displayed in image.svg, the tree radiates from a tight central node, illustrating that the HSPA1A gene in *Homo sapiens*, *Mus musculus*, and *Sus scrofa* shares a highly recent common mammalian ancestor.
 - **Sequence Homology:** The relatively equal branch lengths suggest a steady and conserved rate of evolutionary divergence, further validating the critical cellular role of the HSP70 chaperone which resists high mutation rates.
 
-### 4. PCR Primer Design
-Designed locus-specific primers optimized for standard PCR amplification using **NCBI Primer-BLAST**.
+### 4. PCR Primer Design (Primer-BLAST)
+To enable wet-lab validation and expression analysis of the human **HSPA1A** gene, locus-specific primers were designed using NCBI Primer-BLAST targeting the RefSeq template `NM_005345.6`.
 
-#### Optimized Primer Criteria:
-- **Primer Length:** 18–24 bp
-- **Melting Temperature ($T_m$):** 55°C – 60°C
-- **GC Content:** 40% – 60%
-- **Amplicon Size:** 150–300 bp (optimized for qPCR/Gel Electrophoresis)
+![Primer Design Graphical View](![phylogenetic_tree](https://github.com/user-attachments/assets/e2e18555-e52c-4c56-a901-1bc1e075647a)
+)
+
+**Key Design Insights:**
+- **Exon-Specific Targeting:** As shown in image_d7f7d6.png, 10 high-quality primer pairs were generated. **Primer 1** was selected as the optimal candidate due to its ideal thermodynamic properties and target specificity within the exon region.
+- **Amplicon Amplification:** The primer pairs span across the 3' region (between 1,950 bp and 2,150 bp), which is highly specific for evaluating transcript abundance via qPCR without cross-reacting with other HSP70 pseudogenes.
+
+#### Selected Primer Pair (Primer 1 Details):
+| Primer Type | Sequence (5' -> 3') | Length (bp) | $T_m$ (°C) | GC (%) | Product Size |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| **Forward** | `5'- AGCTGGAGCAGGTGTGTAAC -3'` | 20 | 59.96 | 55.00 | **154 bp** |
+| **Reverse** | `5'- CAGCAATCTTGGAAAGGCCC -3'` | 20 | 59.47 | 55.00 | (Ideal for qPCR) |
 
 ---
 
