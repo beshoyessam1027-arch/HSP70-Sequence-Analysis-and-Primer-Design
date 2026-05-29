@@ -1,7 +1,15 @@
 # 🧬 HSP70 Sequence Analysis, Phylogenetics, and Primer Design
 
+
 ## 📌 Project Overview
-This project focuses on the bioinformatic analysis of the **Heat Shock Protein 70 (HSP70)** gene, a highly conserved molecular chaperone vital for cellular stress response. The workflow includes sequence retrieval, similarity searching via BLAST, Multiple Sequence Alignment (MSA), phylogenetic reconstruction, and functional primer design for downstream PCR applications.
+This project delivers a comprehensive, end-to-end bioinformatic workflow focused on the human **HSPA1A** gene (Heat Shock 70kDa Protein 1A), a critical molecular chaperone involved in cellular stress response and molecular oncology. 
+
+The pipeline bridges the gap between computational genomics (**Dry Lab**) and experimental validation (**Wet Lab**) by combining sequence similarity searches, multiple sequence alignment, phylogenetic reconstruction, and targeted PCR primer design.
+
+### 💡 Project Significance & Key Takeaways
+- **Evolutionary Insights:** Through NCBI BLASTn and Clustal Omega alignment, this analysis provides concrete biological proof of the strict evolutionary conservation of the HSP70 chaperone system across mammalian species, highlighting its indispensable cellular role.
+- **In Silico Optimization:** By leveraging Primer-BLAST, the workflow demonstrates how computational filters (such as balancing $\Delta T_m$, optimizing GC%, and minimizing self-complementarity) can minimize experimental errors and lower costs before entering the wet lab.
+- **Translational Pipeline:** This project serves as a production-ready template for translating raw genomic data ($A, T, C, G$) into highly optimized, locus-specific assays ready for *in vitro* qPCR expression analysis.
 
 ---
 
