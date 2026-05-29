@@ -18,9 +18,15 @@ To validate the evolutionary conservation of the human **HSPA1A** gene, a nucleo
 - **Statistical Significance:** The **E-value was 0.0**, which mathematically proves that the sequence similarity found is highly significant and not by random chance.
 - **Percent Identity:** The top hit confirmed 100% identity with *Homo sapiens* heat shock protein family A member 1A (HSPA1A), validating the absolute accuracy of our query sequence.
 
-### 2. Multiple Sequence Alignment (MSA)
-- Used **Clustal Omega** to align HSP70 sequences from diverse organisms (*Homo sapiens*, *Mus musculus*, *Arabidopsis thaliana*, and *Escherichia coli*).
-- **Objective:** To identify highly conserved catalytic domains and mutation-prone regions within the stress-response protein family.
+### 2. Multiple Sequence Alignment (Clustal Omega)
+To evaluate the evolutionary conservation of the **HSPA1A** gene, a Multiple Sequence Alignment (MSA) was conducted using Clustal Omega with mRNA sequences from *Homo sapiens*, *Mus musculus*, and *Sus scrofa*.
+
+![Clustal Omega Alignment](<img width="607" height="547" alt="alignment_results" src="https://github.com/user-attachments/assets/d959f0a1-f42e-42c6-9703-7f46882827d3" />
+)
+
+**Key Observations from Alignment:**
+- **Highly Conserved Functional Domains:** As shown in image_d86456.png, massive blocks of identical nucleotides are marked with asterisks (`*`), demonstrating strong evolutionary pressure to maintain the integrity of the HSP70 chaperone protein across mammalian species.
+- **5' Untranslated Region (UTR) Divergence:** The alignment clearly reveals that the sequence divergence is significantly higher at the beginning of the sequences (the 5' region), while the coding regions show almost near-perfect sequence identity.
 
 ### 3. Phylogenetic Analysis
 - Reconstructed a **Phylogenetic Tree** using **MEGA (Molecular Evolutionary Genetics Analysis)** utilizing the Neighbor-Joining method.
