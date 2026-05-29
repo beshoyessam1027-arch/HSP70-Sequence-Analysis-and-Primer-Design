@@ -58,24 +58,62 @@ To enable wet-lab validation and expression analysis of the human **HSPA1A** gen
 
 ## 📊 Results & Visualizations
 
-### 1. Multiple Sequence Alignment (MSA)
-*(Insert a screenshot of your Clustal Omega alignment showing conserved stars `*` here)*
-`![Clustal Alignment](path/to/alignment_screenshot.png)`
+### 1. NCBI BLASTn Sequence Similarity Search
+To validate the evolutionary conservation of the human **HSPA1A** gene, a nucleotide BLAST (BLASTn) was performed. 
 
-### 2. Phylogenetic Tree
-*(Insert a screenshot of your evolutionary tree here)*
-`![Phylogenetic Tree](path/to/tree_screenshot.png)`
+![NCBI BLASTn Results](<img width="1128" height="612" alt="blast_results" src="https://github.com/user-attachments/assets/5ef70e9c-f9ca-49e0-885d-d79884439ade" />
+)
 
-### 3. Designed Primers Table
+**Key Observations:**
+- **Query Coverage:** The alignment showed a **100% Query Coverage** with top mammalian hits, ensuring that the full-length mRNA sequence was successfully aligned.
+- **Statistical Significance:** The **E-value was 0.0**, which mathematically proves that the sequence similarity found is highly significant and not by random chance.
+
+---
+
+### 2. Multiple Sequence Alignment (Clustal Omega)
+To evaluate the evolutionary conservation at the nucleotide level, a Multiple Sequence Alignment (MSA) was conducted using Clustal Omega with mRNA sequences from *Homo sapiens*, *Mus musculus*, and *Sus scrofa*.
+
+![Clustal Omega Alignment](<img width="607" height="547" alt="alignment_results" src="https://github.com/user-attachments/assets/5ed182e5-1c41-478e-9c55-79958fd35b1c" />
+)
+
+**Key Observations from Alignment:**
+- **Highly Conserved Functional Domains:** Massive blocks of identical nucleotides are marked with asterisks (`*`), demonstrating strong evolutionary pressure to maintain the integrity of the HSP70 chaperone protein across mammalian species.
+- **5' UTR Divergence:** The alignment reveals that sequence divergence is higher at the beginning of the sequences (5' untranslated region), while coding regions show near-perfect identity.
+
+---
+
+### 3. Phylogenetic Analysis
+An unrooted phylogenetic tree was reconstructed based on the Clustal Omega alignment scores to visualize the evolutionary relationships.
+
+![Phylogenetic Tree](![phylogenetic_tree](https://github.com/user-attachments/assets/e40e1373-d74a-4949-b154-e6872922e196)
+)
+
+**Key Insights from the Tree:**
+- **Common Ancestry:** The tree radiates from a tight central node, illustrating that the HSPA1A gene in *Homo sapiens*, *Mus musculus*, and *Sus scrofa* shares a highly recent common mammalian ancestor.
+- **Sequence Homology:** The relatively equal branch lengths suggest a steady and conserved rate of evolutionary divergence, resisting high mutation rates due to its vital cellular role.
+
+---
+
+### 4. PCR Primer Design (Primer-BLAST)
+To enable wet-lab validation and expression analysis of the human **HSPA1A** gene, locus-specific primers were designed using NCBI Primer-BLAST targeting the RefSeq template `NM_005345.6`.
+
+![Primer Design Graphical View](<img width="1272" height="378" alt="primer_design" src="https://github.com/user-attachments/assets/6252a52b-0033-4b5e-a8e0-4857496f1c29" />
+)
+
+#### Selected Primer Pair (Primer 1 Details):
 | Primer Type | Sequence (5' -> 3') | Length (bp) | $T_m$ (°C) | GC (%) | Product Size |
 | :--- | :--- | :---: | :---: | :---: | :---: |
-| **Forward** | `5'- TGTCGND... -3'` | 20 | 58.5 | 50.0 | **210 bp** |
-| **Reverse** | `5'- AGTCGND... -3'` | 20 | 59.0 | 55.0 | |
+| **Forward** | `5'- AGCTGGAGCAGGTGTGTAAC -3'` | 20 | 59.96 | 55.00 | **154 bp** |
+| **Reverse** | `5'- CAGCAATCTTGGAAAGGCCC -3'` | 20 | 59.47 | 55.00 | (Optimized for qPCR) |
+
+**Key Design Insights:**
+- **Thermodynamic Efficiency:** Primer pair 1 was selected over others (like pair 3) because it exhibits an optimal $\Delta T_m$ of only **0.49°C**, ensuring balanced annealing kinetics during PCR cycling.
+- **Amplicon Specifications:** The primer pair generates a stable **154 bp product** near the 3' region, making it highly specific for evaluating transcript abundance via qPCR without cross-reacting with pseudogenes.
 
 ---
 
 ## 🏁 Conclusion
-The computational analysis successfully confirmed the strict evolutionary conservation of the HSP70 chaperone system across biology. Furthermore, the designed primers passed all strict bioinformatic filters (avoiding self-dimers and cross-reactivity), making them viable candidates for in vitro molecular biological verification.
+The computational analysis successfully confirmed the strict evolutionary conservation of the **HSP70 (HSPA1A)** chaperone system across biological taxa. Furthermore, the designed primers passed all strict bioinformatic filters—exhibiting optimal $T_m$ balance, safe self-complementarity scores, and total target specificity—making them highly viable candidates for *in vitro* molecular biology verification and expression analysis.
 
 ---
 
